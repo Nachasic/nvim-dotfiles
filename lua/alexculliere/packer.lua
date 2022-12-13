@@ -57,6 +57,12 @@ return require('packer').startup(function(use)
     end
   }
 
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = { 'nvim-tree/nvim-web-devicons', },
+    tag = 'nightly'
+  }
+
   if packer_bootstrap then
       require('packer').sync()
   end

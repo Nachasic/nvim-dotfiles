@@ -17,4 +17,12 @@ if exists("g:neovide")
   nnoremap <expr><C-0> ResetScaleFactor()
 endif
 ]], true)
+
+-- Disable NetRW in favor of NvimTree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- termguicolors are recommended for NvimTree
+vim.opt.termguicolors = true
+
 require("alexculliere")

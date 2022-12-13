@@ -2,8 +2,12 @@ local wk = require("which-key")
 
 wk.register({
     e = {
-        name = "Execute",
-        x = { "<cmd>:Ex<CR>", "File explorer" },
+        name = "Explore",
+        -- x = { "<cmd>:Ex<CR>", "File explorer" }, -- Disabled in favor of NvimTree
+        t = { "<cmd>:NvimTreeToggle<CR>", "Toggle NvimTree" },
+        f = { "<cmd>:NvimTreeFocus<CR>", "Focus NvimTree" },
+        F = { "<cmd>:NvimTreeFindFile<CR>", "Focus current file" },
+        c = { "<cmd>:NvimTreeCollapse<CR>", "Collapse" },
     },
     l = {
         name = "LSP",
