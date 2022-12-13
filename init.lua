@@ -3,7 +3,7 @@ vim.api.nvim_exec(
 if exists("g:neovide")
   set guifont=DankMono\ Nerd\ Font\ Mono:h11
 
-  let  g:neovide_scale_factor=1.0
+  let g:neovide_scale_factor=1.0
   function! ChangeScaleFactor(delta)
     let g:neovide_scale_factor = g:neovide_scale_factor * a:delta
   endfunction
@@ -22,6 +22,9 @@ if exists("g:neovide")
   nnoremap <C-J> <C-W><C-J>
   nnoremap <C-K> <C-W><C-K>
   nnoremap <C-L> <C-W><C-L>
+
+  " Open all folds by default
+  set foldlevel=99
 endif
 ]], true)
 
