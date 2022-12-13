@@ -38,6 +38,12 @@ wk.register({
       b = { tscp.git_branches, "Branches" },
       s = { tscp.git_status, "Current changes" },
       S = { tscp.git_stash, "Stash" },
+    },
+    h = {
+      name = "Help",
+      t = { "<cmd>:Telescope terraform_doc<CR>", "Terraform docs" },
+      c = { "<cmd>:Cheatsheet<CR>", "Nvim cheatsheet" },
     }
-  }
+  },
+
 }, { prefix = "<leader>" })
