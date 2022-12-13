@@ -79,6 +79,15 @@ return require('packer').startup(function(use)
     requires = { 'nvim-lua/plenary.nvim' }
   }
 
+  use {
+    'sudormrfbin/cheatsheet.nvim',
+    requires = {
+      { 'nvim-telescope/telescope.nvim' },
+      { 'nvim-lua/popup.nvim' },
+      { 'nvim-lua/plenary.nvim' }
+    }
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
