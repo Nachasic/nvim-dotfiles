@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
         }
     end
   }
-  
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     requires = {
@@ -48,6 +48,13 @@ return require('packer').startup(function(use)
         {'L3MON4D3/LuaSnip'},
         {'rafamadriz/friendly-snippets'},
     }
+  }
+
+  use {
+    "terrortylor/nvim-comment",
+    config = function()
+      require('nvim_comment').setup()
+    end
   }
 
   if packer_bootstrap then
