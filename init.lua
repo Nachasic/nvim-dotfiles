@@ -25,6 +25,9 @@ if exists("g:neovide")
 
   " Open all folds by default
   set foldlevel=99
+
+  " Enable autoformatting on save
+  autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
 endif
 ]], true)
 
