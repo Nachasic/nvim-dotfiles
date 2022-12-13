@@ -1,5 +1,5 @@
 vim.api.nvim_exec(
-[[
+  [[
 if exists("g:neovide")
   set guifont=DankMono\ Nerd\ Font\ Mono:h11
 
@@ -28,8 +28,11 @@ if exists("g:neovide")
 
   " Enable autoformatting on save
   autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
+
+  " Enable system clipboard
+  set clipboard+=unnamedplus
 endif
-]], true)
+]] , true)
 
 -- Disable NetRW in favor of NvimTree
 vim.g.loaded_netrw = 1
