@@ -91,6 +91,14 @@ return require('packer').startup(function(use)
     }
   }
 
+  use({
+    'noib3/nvim-cokeline',
+    requires = 'kyazdani42/nvim-web-devicons', -- If you want devicons
+    config = function()
+      require('cokeline').setup()
+    end
+  })
+
   if packer_bootstrap then
     require('packer').sync()
   end

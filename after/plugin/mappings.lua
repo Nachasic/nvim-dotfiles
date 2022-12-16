@@ -2,6 +2,9 @@ local wk = require("which-key")
 local tscp = require('telescope.builtin')
 
 wk.register({
+  p = { "<Plug>(cokeline-focus-next)<CR>", "Focus next buffer" },
+  P = { "<Plug>(cokeline-focus-prev)<CR>", "Focus previos buffer" },
+  c = { "<cmd>:bdelete<CR>", "Close buffer" },
   e = {
     name = "Explore",
     -- x = { "<cmd>:Ex<CR>", "File explorer" }, -- Disabled in favor of NvimTree
